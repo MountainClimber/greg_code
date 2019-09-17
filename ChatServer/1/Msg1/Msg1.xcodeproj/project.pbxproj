@@ -17,6 +17,8 @@
 		3731CFF0232D6F0100A5A579 /* UserMsgTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3731CFEF232D6F0100A5A579 /* UserMsgTableViewController.swift */; };
 		93DE7B47774689B02E45E67D /* Pods_Msg1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C382B4193BA2AE5E0F9EA5 /* Pods_Msg1UITests.framework */; };
 		B62282CE4D4482AEE54B40B2 /* Pods_Msg1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 998B2F0C4BC3DB78331ABD08 /* Pods_Msg1Tests.framework */; };
+		B770BFAC23319E4D009B6466 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B770BFAA23319E4D009B6466 /* UserTableViewCell.swift */; };
+		B770BFAD23319E4D009B6466 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B770BFAB23319E4D009B6466 /* UserTableViewCell.xib */; };
 		EB256F3045EC9E2114022BB9 /* Pods_Msg1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 062F22AAC8F92DB89E86402B /* Pods_Msg1.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +62,8 @@
 		8C38D5F6988409F537B78791 /* Pods-Msg1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Msg1.debug.xcconfig"; path = "Target Support Files/Pods-Msg1/Pods-Msg1.debug.xcconfig"; sourceTree = "<group>"; };
 		998B2F0C4BC3DB78331ABD08 /* Pods_Msg1Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Msg1Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B757AF292B1EB026C66963B1 /* Pods-Msg1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Msg1.release.xcconfig"; path = "Target Support Files/Pods-Msg1/Pods-Msg1.release.xcconfig"; sourceTree = "<group>"; };
+		B770BFAA23319E4D009B6466 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		B770BFAB23319E4D009B6466 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
 		F8872AB6AC3A84771619F41B /* Pods-Msg1UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Msg1UITests.release.xcconfig"; path = "Target Support Files/Pods-Msg1UITests/Pods-Msg1UITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +123,8 @@
 				3731CFC1232D6ABE00A5A579 /* AppDelegate.swift */,
 				3731CFC3232D6ABE00A5A579 /* ViewController.swift */,
 				3731CFC5232D6ABE00A5A579 /* Main.storyboard */,
+				B770BFAA23319E4D009B6466 /* UserTableViewCell.swift */,
+				B770BFAB23319E4D009B6466 /* UserTableViewCell.xib */,
 				3731CFC8232D6ABF00A5A579 /* Assets.xcassets */,
 				3731CFCA232D6ABF00A5A579 /* LaunchScreen.storyboard */,
 				3731CFCD232D6ABF00A5A579 /* Info.plist */,
@@ -276,6 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B770BFAD23319E4D009B6466 /* UserTableViewCell.xib in Resources */,
 				3731CFCC232D6ABF00A5A579 /* LaunchScreen.storyboard in Resources */,
 				3731CFC9232D6ABF00A5A579 /* Assets.xcassets in Resources */,
 				3731CFC7232D6ABE00A5A579 /* Main.storyboard in Resources */,
@@ -389,6 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B770BFAC23319E4D009B6466 /* UserTableViewCell.swift in Sources */,
 				3731CFC4232D6ABE00A5A579 /* ViewController.swift in Sources */,
 				3731CFC2232D6ABE00A5A579 /* AppDelegate.swift in Sources */,
 				3731CFF0232D6F0100A5A579 /* UserMsgTableViewController.swift in Sources */,

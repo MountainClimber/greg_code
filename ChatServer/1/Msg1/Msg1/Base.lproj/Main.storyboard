@@ -10,16 +10,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--User Msg Table View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="UserMsgTableViewController" customModule="Msg1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Msg1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter a message" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="BqT-FC-B11">
-                                <rect key="frame" x="20" y="108" width="374" height="20"/>
+                                <rect key="frame" x="20" y="64" width="374" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="UDE-fi-vR0"/>
                                 </constraints>
@@ -31,42 +31,6 @@
                                 <rect key="frame" x="20" y="138" width="374" height="724"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MsgCell" rowHeight="93" id="yN8-dA-nbH">
-                                        <rect key="frame" x="0.0" y="28" width="374" height="93"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yN8-dA-nbH" id="reB-eS-aNh">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="92.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserNameLabel" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dka-ui-4no">
-                                                    <rect key="frame" x="324" y="0.0" width="50" height="20"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="50" id="J4h-4K-3l3"/>
-                                                        <constraint firstAttribute="height" constant="20" id="ixf-C5-fuK"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserMsgLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bn-tk-jrQ">
-                                                    <rect key="frame" x="263" y="30" width="111" height="62.5"/>
-                                                    <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="0bn-tk-jrQ" firstAttribute="top" secondItem="dka-ui-4no" secondAttribute="bottom" constant="10" id="56q-Ou-ofF"/>
-                                                <constraint firstAttribute="bottom" secondItem="0bn-tk-jrQ" secondAttribute="bottom" id="eb4-Ib-cGu"/>
-                                                <constraint firstItem="dka-ui-4no" firstAttribute="top" secondItem="reB-eS-aNh" secondAttribute="top" id="i3V-vz-yua"/>
-                                                <constraint firstAttribute="trailing" secondItem="dka-ui-4no" secondAttribute="trailing" id="jfa-V6-6aH"/>
-                                                <constraint firstAttribute="trailing" secondItem="0bn-tk-jrQ" secondAttribute="trailing" id="sZX-wE-lWN"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -80,7 +44,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="rlS-7k-vAf"/>
                     <connections>
-                        <outlet property="messageTextField" destination="BqT-FC-B11" id="zJJ-hm-Hab"/>
+                        <outlet property="tableView" destination="HFd-ZV-XGo" id="6q6-y7-47P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -97,9 +61,6 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="eHp-le-pou"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xhi-9E-dic" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
